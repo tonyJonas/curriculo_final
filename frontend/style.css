@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+/* body {
+    display: flex;
+} */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: gray;
+}
+
+.imagemPerfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(../public/images/foto_perfil.jpg) ;
+    background-size: 220px;
+}
+
+.informacoesTecnicas {
+    background-color: aliceblue;
+    padding: 24px 0 0 24px;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+.pessoa {
+    text-align: center;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cadastro > input {
+    margin-bottom: 24px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONDERADA SEM05</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="imagemPerfil">
+                </div>
+            </div>
+            <div class="idUser" value="a"></div>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="pessoa">
+                    <h1 id="nome">TONY JONAS</h1>
+                    <h2 id="cargo">Estudante</h2>
+                    <br>
+                    <br>
+                    <button onclick="resumoAleat2()">mudar o curriculo</button>
+                    <br>
+                    <br>
+                    <a href="./cadastro.html"><button>Inserir novo usuário</button></a>
+                    
+                    <br>
+                    <br>
+                    <button onclick="deletarUsuario()">Deletar esse usuário</button>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="informacoesTecnicas">
+            <div class="formacao">
+                <h3>Formação</h3>
+                <div class="row grupoCurso">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeCurso1">Curso</h4>  | <p id="dataInicioCurso1"> 2000</p> - <p id="dataFimCurso1">2003</p>
+                        <p id="caracteristicasCurso1">Características do curso: instituição, diploma obtido</p>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeCurso2">Curso</h4>  | <p id="dataInicioCurso2"> 2000</p> - <p id="dataFimCurso2">2003</p>
+                        <p id="caracteristicasCurso2">Características do curso: instituição, diploma obtido</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experiencia">
+                <h3>Experiência</h3>
+                <div class="row grupoExperiencia">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeEmpresa1">Curso</h4>  | <p id="dataInicioEmpresa1"> 2000</p> - <p id="dataFimEmpresa1">2003</p> | <p id="cargoEmpresa1">Cargo</p>
+                        <p id="caracteristicasEmpresa1">Características do curso: instituição, diploma obtido</p>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeEmpresa2">Curso</h4>  | <p id="dataInicioEmpresa2"> 2000</p> - <p id="dataFimEmpresa2">2003</p> | <p id="cargoEmpresa2">Cargo</p>
+                        <p id="caracteristicasEmpresa2">Características do curso: instituição, diploma obtido</p>
+                    </div>
+                </div>
+            </div>
+            <div class="realizacoes">
+                <h3>Realizações</h3>
+                <div class="row grupoRealizacoes">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeRealizacao1">Realizacao</h4>  | <p id="dataInicioRealizacao1"> 2000</p> - <p id="dataFimRealizacao1">2003</p>
+                        <p id="caracteristicasRealizacao1">Características da Realizacao: instituição, diploma obtido</p>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <h4 id="nomeRealizacao2">Realizacao</h4>  | <p id="dataInicioRealizacao2"> 2000</p> - <p id="dataFimRealizacao2">2003</p>
+                        <p id="caracteristicasRealizacao2">Características da Realizacao: instituição, diploma obtido</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="informacoesPessoais container-fluid">
+            <div class="sobreMim">
+                <h2>Sobre mim</h2>
+                <div class="row grupoCurso">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h4>Endereço: </h4>
+                        <p id="endereco">xxxxxx</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h4>Telefone: </h4>
+                        <p id="telefone">xxxxxx</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h4>Email: </h4>
+                        <p id="email">xxxxxx</p>
+                    </div>
+                </div>
+                <p>Resumo da trajetoria</p>
+            </div>
+            <div class="row habilidades">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4>Illustrator: </h4>
+                    <p>4,5 de 5</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4>Photoshop: </h4>
+                    <p>4,5 de 5</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4>Corel Draw: </h4>
+                    <p>4,5 de 5</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4>DreamWeaver: </h4>
+                    <p>4,5 de 5</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4>HTML/CSS3: </h4>
+                    <p>4,5 de 5</p>
+                </div>
+            </div>
+            <div class="personalidade"></div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
